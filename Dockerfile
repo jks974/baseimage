@@ -24,8 +24,8 @@ RUN echo "deb http://security.ubuntu.com/ubuntu trusty-security universe" > /etc
 RUN echo "deb-src http://security.ubuntu.com/ubuntu trusty-security universe" > /etc/apt/sources.list
 RUN echo "deb http://security.ubuntu.com/ubuntu trusty-security multiverse" > /etc/apt/sources.list
 RUN echo "deb-src http://security.ubuntu.com/ubuntu trusty-security multiverse" > /etc/apt/sources.list
-RUN echo "deb http://extras.ubuntu.com/ubuntu trusty main" > /etc/apt/sources.list
-RUN echo "deb-src http://extras.ubuntu.com/ubuntu trusty main" > /etc/apt/sources.list
+#RUN echo "deb http://extras.ubuntu.com/ubuntu trusty main" > /etc/apt/sources.list
+#RUN echo "deb-src http://extras.ubuntu.com/ubuntu trusty main" > /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get upgrade -y
 

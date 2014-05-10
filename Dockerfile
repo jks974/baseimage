@@ -3,7 +3,8 @@ FROM ubuntu:14.04
 MAINTAINER Jks
 
 # Update package repository
-RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe restricted" > /etc/apt/sources.list
+RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates main universe restricted" > /etc/apt/sources.list
 #RUN echo "deb http://extras.ubuntu.com/ubuntu trusty main" > /etc/apt/sources.list
 #RUN echo "deb-src http://extras.ubuntu.com/ubuntu trusty main" > /etc/apt/sources.list
 RUN apt-get update

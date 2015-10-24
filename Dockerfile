@@ -3,9 +3,9 @@ FROM ubuntu:15.10
 MAINTAINER Jks
 
 # Update package repository
-RUN echo "deb http://us.archive.ubuntu.com/ubuntu trusty main universe restricted multiverse" > /etc/apt/sources.list
-RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates main universe restricted multiverse" >> /etc/apt/sources.list
-RUN echo "deb http://security.ubuntu.com/ubuntu trusty-security main universe restricted multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://us.archive.ubuntu.com/ubuntu wily main universe restricted multiverse" > /etc/apt/sources.list
+RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ wily-updates main universe restricted multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://security.ubuntu.com/ubuntu wily-security main universe restricted multiverse" >> /etc/apt/sources.list
 #RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe" >> /etc/apt/sources.list
 #RUN echo "deb-src http://us.archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe" >> /etc/apt/sources.list
 #RUN echo "deb http://extras.ubuntu.com/ubuntu trusty main" >> /etc/apt/sources.list
